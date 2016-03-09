@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* Documento CSS */
+
+
+body{
+background-color: #e6e6e6 !important;
+}
+
+a, a:hover{
+text-decoration:none !important;
+color:#fff !important;
+}
+
+ul,li{
+list-style-type:none;
+}
+
+.bannerPrincipal{
+margin:12px 0;
+}
+
+.cabecalho{
+	font-family: 'Dosis','Arial Narrow',sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#fff;
+	max-width:1320px;
+	height:80px;
+	background-color:#ed1c24;
+}
+
+.logoQuatroRodas{
+padding:20px;
+max-width:200px;
+}
+
+.areaMenuPrincipal{
+max-width:800px;
+height:30px;
+padding:10px 0;
+}
+
+.menuPrincipal
+{
+	width:100%;
+	height:100%;
+}
+
+.itensMenuPrinc li
+{
+display:block;
+float:left;
+padding:6px;
+margin:6px;
+}
+
+.itensMenuAcessados li
+{
+font-size:13px;
+display:block;
+float:left;
+padding:0 3px;
+margin:4px 3px;
+}
+
+.itensMenuAcessados
+{
+margin:0 !important;
+padding:0 !important;
+}
+
+.setaAcessados{
+margin:0 !important;
+padding:5px 0 5px 10px !important;
+width:144px;
+height:28px;
+background:url('../imagens/seta-maisacessados.png') no-repeat;
+}
+
+.busca{
+font-family: 'HelveticaNeue',Arial,sans-serif;
+font-weight:normal;
+text-transform:uppercase;	
+width:190px;
+padding:12px;
+color:#a3a3a3;
+margin:17px 20px;
+border:none;
+background:#fff url('../imagens/lupinha-busca.png') no-repeat 170px 14px;
+}
+
+.menuAcessados
+{
+background-color: #242424;
+width:100%;
+height:28px;
+margin:0 0 0 0 !important;
+}
+
+.leadPrincipal{
+height:500px;
+background-color:#555;
+}
+
+.deslocaTitulo{
+position:relative;
+bottom:-350px;
+text-align:right;
+}
+
+.deslocaMenor{
+position:relative;
+bottom:-160px;
+}
+
+.deslocaTitulo h1{
+font-family:'Dosis Medium',arial, sans-serif;
+margin-top:5px;
+}
+
+.deslocaMenor h1{
+font-family:'Dosis',arial, sans-serif;
+font-weight:bold;
+font-size:20px;
+margin-top:5px;
+}
+
+.secao{
+font-family:'Dosis Medium',arial, sans-serif;
+font-size:16px;
+background:url('../imagens/bolete.png') no-repeat 0 2px;
+padding: 0 0 0 20px;
+}
+
+.destaqueMenor{
+height:250px;
+background-color:#FC9;
+}
+
+#Destaques{
+text-transform:uppercase;
+font-family:'Dosis','Arial narrow',sans-serif;
+text-align:right;
+color:#fff;
+background-size:100%;
+}
+
+.publi{
+background-color:#222222;
+}
+
+.publi img{
+}
+
+.miniatura{
+height:200px;
+width:100%;
+}
+
+.secaoMini{
+text-align:left;
+font-size:16px;
+font-weight:bold;
+position:relative;
+top:170px;
+padding:0 15px;
+}
+
+.bolete{
+position:relative;
+top:5px;
+width:14px;
+height:14px;
+background-color:#ed1c24;
+border-radius:20%;
+float:left;
+margin-right:10px;
+}
+
+.bolete2{
+width:14px;
+height:14px;
+border-radius:20%;
+position:relative;
+top:5px;
+right:10px;
+float:left;
+margin-right:10px;
+background-color:#ed1c24;
+}
+
+.Posts{
+margin:10px 0 0 0;
+}
+
+/* Subseções do menu */
+
+#Carros{
+	z-index:3;
+	display:none;
+	position:relative;
+	top:-28px;
+	left:0;
+	width:100%;
+	background-color:#242424;
+	border-bottom:solid 1px #ed1c24;
+}
+
+#Carros{
+height:170px;
+}
+
+#Carros ul li{
+}
+
+#Testes,#Noticias,#Autoservico,#Guia,#Fipe,#Assine{
+display:none;
+height:200px;
+}
+
+.ver{
+padding:10px;
+width:200px;
+height:100%;
+float:left;	
+}
+
+.miniatura{
+background-color:#0CF;
+}
+
+/* Posts Destaque */
+
+#Destaques .Titulo,#Destaques .Linha,#Destaques .mais{
+padding:0 15px;
+text-align:left;
+}
+
+
+#Destaques .Titulo{
+color:#000;
+font-size:22px;
+font-weight:bold;
+margin:5px 0;
+}
+
+#Destaques .Linha{
+font-size:16px;
+text-transform:none;
+color:#000;
+font-weight:bold;
+}
+
+#Destaques .mais{
+font-weight:bold;
+color:#ec444b;
+margin:5px 0 20px 0;
+}
+
+.semPadEsq{
+padding-left:0 !important;
+}
+
+.semPadDir{
+padding-right:0 !important;
+}
+
+.padEsqDez{
+padding-left:10px !important;
+}
+
+.padDirDez{
+padding-right:10px !important;
+}
