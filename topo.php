@@ -1,7 +1,7 @@
 <div class="container">
 
 	<div class="row">
-   	  <div class="cabecalho">
+   	  <div class="cabecalho hidden-sm hidden-xs">
         	<div class="logoQuatroRodas pull-left">
             <img class="img-responsive" src="imagens/logo-quatro-rodas.png" />
             </div>
@@ -105,3 +105,36 @@
 	
 
 </div>
+
+           <!-- topo do site versão mobile/tablet -->
+	<nav class="navbar navbar-inverse navbar-fixed-top visible-xs visible-sm barrinhaMobile">
+      <div class="container">
+        <div class="navbar-header">
+              <a class="navbar-brand navbar-left" href="#" target="_top"><img class="img-responsive" /></a>
+             
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Alterna Navegação</span>
+              <div id="barrinhas">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </div>
+          </button>
+<!-- <a href="index.php?pagina=CarrinhoVazio.php" target="_top"><img class="navbar-link img-responsive CestinhaMobile" src="Imagens/cestinha_pq4branca.png" /></a>  -->
+
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="itemMenuMobile active"><a href="#" target="_top">Carros</a></li>
+            <li class="itemMenuMobile active"><a href="#" target="_top">Testes</a></li>
+            <li class="itemMenuMobile active"><a href="#" target="_top">Notícias</a></li>
+            <li class="itemMenuMobile active"><a href="#" target="_top">Auto-Serviço</a></li>
+            <li class="itemMenuMobile active"><a href="#" target="_top">Guia de Compras</a></li>
+            <li class="itemMenuMobile active"><a href="#" target="_top">Tabela FIPE</a></li>
+            <li class="itemMenuMobile active"><a href="#" target="_top">Assine</a></li>
+
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
