@@ -3,7 +3,7 @@
 	<div class="row">
    	  <div class="cabecalho hidden-sm hidden-xs">
         	<div class="logoQuatroRodas pull-left">
-            <img class="img-responsive" src="imagens/logo-quatro-rodas.png" />
+            <img class="img-responsive" src="<?php bloginfo('template_directory');?>/imagens/logo-quatro-rodas.png" />
             </div>
 
 		<div class="areaMenuPrincipal pull-left">

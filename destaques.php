@@ -1,41 +1,103 @@
+
 <div id="Destaques" class="container">
 
-	<div class="row">
-    
-    <div class="col-lg-6 leadPrincipal">
-    	<div class="deslocaTitulo">
-	    	<span class="secao">Carros Grandes</span>
-	    	<h1>BMW confirma novos X1<br />
-    	    e Serie 3 no Brasil</h1>
-        </div>
-    </div>
-    
-    <div class="col-lg-3 destaqueMenor">
-    	<div class="deslocaMenor">
-		    <span class="secao">Fabricantes</span>
-		    <h1>KIA</h1>
-        </div>
-    </div>
-    <div class="col-lg-3 destaqueMenor publi">
-    <p><img class="img-responsive" alt="Volkswagen Fusca - O Carro Voltou - publicidade" src="imagens/publi.png" /></p>
-    </div>
-    
-    <div class="col-lg-3 destaqueMenor" style="background-color:#F60;">
-    	<div class="deslocaMenor">
-		    <span class="secao">Fabricantes</span>
-		    <h1>Frankfurt</h1>
-		</div>
-    </div>
-    
-    <div class="col-lg-3 destaqueMenor">
-    	<div class="deslocaMenor">
-		    <span class="secao">Promovido por Volkswagen</span>
-		    <h1>Nova Geração do Volkswagen Tiguan</h1>
-   			 </div>
+<div class="row">
+<?php
+
+// argumentos para o Loop irão para a variável $args
+$args = array (
+	'order' => 'ASC',
+);
+
+// Faça a Query com os argumentos de $args
+
+$query = new WP_Query( $args );
+
+
+//Loop
+
+if ( $query->have_posts() ) {
+	while ( $query->have_posts() ) {
+		$query->the_post();
+        $contagem++;
+		 
+		 if ($contagem == 1) {  // Post principal
+			 ?>
+         <div class="col-lg-6 leadPrincipal">
+  	    	<div class="deslocaTitulo">
+		    	<span class="secao"><?php the_category(); ?></span>
+	    		<h1><?php the_title(); ?></h1>
+        	</div>
+        
+        <div class="miniaturaDePost">
+		<?php if ( has_post_thumbnail() ) {
+			the_post_thumbnail(array(600,600));
+				}
+		?>
+        	</div>
+        
     	</div>
-    </div>
     
+   		 <?php
+		 // bloco de publicidade
+		  } elseif ($contagem ==3){
+			?>
+			<div class="col-lg-3 destaqueMenor publi">
+    			<p><img class="img-responsive" alt="Volkswagen Fusca - O Carro Voltou - publicidade" src="<?php bloginfo('template_directory');?>/imagens/publi.png" /></p>
+    		</div>
+          
+            <div class="col-lg-3 destaqueMenor">
+    		<div class="deslocaMenor">
+		    	<span class="secao"><?php the_category(); ?></span>
+		    	<h1><?php the_title(); ?></h1>
+        	</div>
+        
+       		<div class="miniaturaDePost">
+			<?php if ( has_post_thumbnail() ) {
+			the_post_thumbnail(array(294,294));
+				}		?>
+        	</div>        
+
+    		</div>  
+	
+	
+	
+		<?php
+		// posts menores		 
+		 } else { ?>
+        <div class="col-lg-3 destaqueMenor">
+    		<div class="deslocaMenor">
+		    	<span class="secao"><?php the_category(); ?></span>
+		    	<h1><?php the_title(); ?></h1>
+        	</div>
+        
+       <div class="miniaturaDePost">
+		<?php if ( has_post_thumbnail() ) {
+			the_post_thumbnail(array(294,294));
+				}		?>
+        </div>        
+
+    </div>   
     
+<?php
+			 
+		 }
+	} // end while
+} // end if
+
+wp_reset_postdata();
+
+?>
+
+
+
+
+
+
+
+</div>
+
+       
     <div class="row Posts">
     	<div class="col-lg-3 semPadEsq padDirDez">
         	<div class="miniatura">
@@ -83,3 +145,6 @@
     </div>
 
 </div>
+
+
+<?php wp_footer(); ?>

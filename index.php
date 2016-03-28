@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8" />
-<meta name="description" content="Teste Altran Quatro Rodas - site responsivo - 2016" />
-<title>Teste Altran Quatro Rodas</title>
 
-<link rel="stylesheet" type="text/css" href="css/fontes.css" />
-<link rel="stylesheet" type="text/css" href="css/estilo.css" />
+<?php echo get_bloginfo( 'name' ); ?>
+<?php echo get_bloginfo( 'description' ); ?>
+
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/css/fontes.css" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/css/estilo.css" />
 
     <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory');?>/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,13 +26,14 @@
 include "banner.php";
 include "topo.php";
 include "destaques.php";
+include "rodape.php";
 ?>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="scripts/jquery-1.11.3.min.js"></script>
+    <script src="<?php bloginfo('template_directory');?>/scripts/jquery-1.11.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <script src="<?php bloginfo('template_directory');?>/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory');?>/scripts/scripts.js"></script>
 
 </body>
 </html>
