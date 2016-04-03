@@ -11,7 +11,7 @@
             
             <nav>
             	<ul class="itensMenuPrinc">
-            	    <li><a href="#" onmouseover="menu('Carros');" onclick="menu('Carros');">Carros</a><span class="caret"></span></li>
+            	    <li><a href="http://sasso.pe.hu/phplandia/wordpress/internaquenaoexisteagora.php?tag=carros" onmouseover="menu('Carros',150);" onclick="menu('Carros');">Carros</a><span class="caret"></span></li>
                     	
             		<li><a href="#">Testes</a><span class="caret"></span></li>
                     
@@ -61,7 +61,7 @@
       <!-- Menu interativo -->
       					<div id="Carros">
                         <div class="ver">
-                        	<button class="bt">Ver todos os carros</button>
+                        	<button class="bt btVerTodos">Ver todos os carros</button>
                             </div>
                             <div>
                             <ul>
@@ -104,26 +104,33 @@
     </div>
 	
 
-</div>
 
            <!-- topo do site versão mobile/tablet -->
-	<nav class="navbar navbar-inverse navbar-fixed-top visible-xs visible-sm barrinhaMobile">
-      <div class="container">
+           <div class="row">
+               
+           <div id="menuSt" class="barrinhaMobile visible-xs visible-sm">
+	<nav class="navbar navbar-inverse navbarQuatroRodas">
         <div class="navbar-header">
-              <a class="navbar-brand navbar-left" href="#" target="_top"><img class="img-responsive" /></a>
-             
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Alterna Navegação</span>
+
+              <button type="button" class="btNavMobile btEsq navbar-toggle collapsed pull-left">
+              <span class="sr-only">Busca</span>
               <div id="barrinhas">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="glyphicon glyphicon-search"></span>
             </div>
           </button>
-<!-- <a href="index.php?pagina=CarrinhoVazio.php" target="_top"><img class="navbar-link img-responsive CestinhaMobile" src="Imagens/cestinha_pq4branca.png" /></a>  -->
+        
+        
+              <a class="navbar-brand areaLogo" href="#" target="_top"><img class="img-responsive" src="<?php bloginfo('template_directory');?>/imagens/logo-quatro-rodas-mobile.png" /></a>
+             
+              <button type="button" class="btNavMobile btDir navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" onclick="fundoMenu('Fundo');">
+              <span class="sr-only">Alterna Navegação</span>
+              <div id="barrinhas">
+            <span class="btFecharMenuMobile"></span>
+            </div>
+          </button>
 
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
+        <div id="navbar" class="collapse navbar-collapse navCabecalho">
           <ul class="nav navbar-nav">
             <li class="itemMenuMobile active"><a href="#" target="_top">Carros</a></li>
             <li class="itemMenuMobile active"><a href="#" target="_top">Testes</a></li>
@@ -136,5 +143,9 @@
 
           </ul>
         </div><!--/.nav-collapse -->
-      </div>
     </nav>
+
+    </div>
+    
+</div>
+    

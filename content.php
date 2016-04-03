@@ -1,4 +1,4 @@
-<div id="Destaques" class="container">
+<div id="Destaques">
 
 	<div class="row">
     
@@ -63,5 +63,7 @@
 		?>
         </div>        
     	</div>
+
+</div>
 
 </div>

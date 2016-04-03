@@ -1,5 +1,5 @@
 
-<div id="Destaques" class="container">
+<div id="Destaques">
 
 <div class="row">
 <?php
@@ -147,4 +147,3 @@ wp_reset_postdata();
 </div>
 
 
-<?php wp_footer(); ?>

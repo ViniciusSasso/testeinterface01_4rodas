@@ -2,9 +2,6 @@
 <head>
 <meta charset="utf-8" />
 
-<?php echo get_bloginfo( 'name' ); ?>
-<?php echo get_bloginfo( 'description' ); ?>
-
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/css/fontes.css" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/css/estilo.css" />
 
@@ -22,18 +19,28 @@
 
 <body>
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="<?php bloginfo('template_directory');?>/scripts/jquery-1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="<?php bloginfo('template_directory');?>/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory');?>/scripts/scripts.js"></script>
+
+   <script type="text/javascript" src="<?php bloginfo('template_directory');?>/scripts/jquery.sticky.js"></script>
+   
+  <script>
+    $(window).load(function(){
+      $("#menuSt").sticky({ topSpacing: 0 });
+    });
+  </script>   
+
+<div id="Fundo"></div>
+
 <?php
 include "banner.php";
 include "topo.php";
 include "destaques.php";
 include "rodape.php";
 ?>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="<?php bloginfo('template_directory');?>/scripts/jquery-1.11.3.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="<?php bloginfo('template_directory');?>/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="<?php bloginfo('template_directory');?>/scripts/scripts.js"></script>
 
 </body>
 </html>
