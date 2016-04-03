@@ -1,6 +1,7 @@
 @charset "utf-8";
-/* Documento CSS */
+/* Quatro Rodas */
 
+/* Gerais */
 
 body{
 background-color: #e6e6e6 !important;
@@ -15,6 +16,8 @@ ul,li{
 list-style-type:none;
 }
 
+/* Componentes */
+
 .bannerPrincipal{
 margin:12px 0;
 }
@@ -27,6 +30,7 @@ margin:12px 0;
 	max-width:1320px;
 	height:80px;
 	background-color:#ed1c24;
+	z-index:1;
 }
 
 .logoQuatroRodas{
@@ -99,7 +103,8 @@ margin:0 0 0 0 !important;
 
 .leadPrincipal{
 height:500px;
-background-color:#555;
+/* background-color:#555; */
+overflow:hidden;
 }
 
 .deslocaTitulo{
@@ -116,6 +121,7 @@ bottom:-160px;
 .deslocaTitulo h1{
 font-family:'Dosis Medium',arial, sans-serif;
 margin-top:5px;
+clear:both;
 }
 
 .deslocaMenor h1{
@@ -123,18 +129,21 @@ font-family:'Dosis',arial, sans-serif;
 font-weight:bold;
 font-size:20px;
 margin-top:5px;
+clear:both;
 }
 
 .secao{
 font-family:'Dosis Medium',arial, sans-serif;
 font-size:16px;
-background:url('../imagens/bolete.png') no-repeat 0 2px;
-padding: 0 0 0 20px;
+background:url('../imagens/bolete.png') no-repeat 0 4px;
+float:right;
+line-height:30px;
 }
 
 .destaqueMenor{
 height:250px;
-background-color:#FC9;
+overflow:hidden;
+/*background-color:#FC9;*/
 }
 
 #Destaques{
@@ -207,10 +216,19 @@ margin:10px 0 0 0;
 }
 
 #Carros{
-height:170px;
+height:150px;
+}
+
+#Carros ul{
+margin-top:14px;
 }
 
 #Carros ul li{
+	font-family:'Dosis Medium',Arial,sans-serif;
+	text-transform:none;
+	font-weight:normal;
+	margin:10px 0;
+	letter-spacing:0.5px;
 }
 
 #Testes,#Noticias,#Autoservico,#Guia,#Fipe,#Assine{
@@ -222,7 +240,15 @@ height:200px;
 padding:10px;
 width:200px;
 height:100%;
-float:left;	
+float:left;
+}
+
+.btVerTodos{
+background-color:#474747;
+border:none;
+padding:6px 12px;
+letter-spacing:1px;
+font-size:15px;
 }
 
 .miniatura{
@@ -257,6 +283,118 @@ color:#ec444b;
 margin:5px 0 20px 0;
 }
 
+.miniaturaDePost{
+height:100%;
+overflow:hidden;
+padding:0;
+margin:0;
+float:left;
+position:absolute;
+top:0;
+left:0;
+z-index:-1;
+text-align:center;
+}
+
+.miniaturaDePost img{
+	
+}
+
+/* navegação Mobile */
+
+.areaLogo{
+height:100% !important;
+background-color:#ed1c24 !important;
+}
+
+.bannerMobile{
+z-index:10;
+clear:both;
+background-color:#fff;
+}
+
+.barrinhaMobile{
+z-index:10;
+display:inline-block;
+width:100%;
+background-color:#d41f1f !important;
+}
+
+#menuSt{
+z-index:10;
+}
+
+.navbarQuatroRodas{
+background-color:#ed1c24 !important;
+min-height:54px !important;
+height:100% !important;
+border:none !important;
+margin-bottom: 0 !important;
+}
+
+.btNavMobile{
+background-color:#d41f1f !important;
+min-height:64px !important;
+height:100% !important;
+border:none !important;
+border-radius:0 !important;
+margin-top:0 !important;
+margin-bottom:0 !important;
+margin-right:0 !important;
+padding: 10px 20px !important;
+color:#fff;
+}
+
+.btEsq{
+background-color:#ed1c24 !important;
+}
+
+.btDir{
+}
+
+.btNavMobile:hover{
+
+}
+
+.navCabecalho{
+border-color:#d41f1f !important;
+}
+
+.navbar-collapse.in{
+z-index:10 !important;
+}
+
+.barrinhaMobile .active>a{
+background-color:transparent !important;
+}
+
+.barrinhaMobile ul{
+font-family:'Dosis', Arial, sans-serif;
+font-weight:bold;
+text-transform:uppercase;
+letter-spacing:0.5px;
+}
+
+.barrinhaMobile li{
+border-top: solid 1px #c21c1c;
+padding-left:10px;
+}
+
+.btFecharMenuMobile{
+display:block;
+background:url('../imagens/x.png') no-repeat center;
+width:20px;
+height:20px;
+}
+
+/* Sobrescrever */
+
+.post-categories{
+padding-left:20px;
+}
+
+/* Ajustes locais */
+
 .semPadEsq{
 padding-left:0 !important;
 }
@@ -271,4 +409,15 @@ padding-left:10px !important;
 
 .padDirDez{
 padding-right:10px !important;
+}
+
+#Fundo{
+display:none;
+background-color:rgba(100,100,100,.5);
+height:100%;
+width:100%;
+position:fixed;
+top:0px;
+left:0;
+z-index:0;
 }
