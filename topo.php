@@ -1,7 +1,7 @@
 <div class="container">
 
 	<div class="row">
-   	  <div class="cabecalho hidden-sm hidden-xs">
+   	  <div id="menuPrincipalSt" class="cabecalho visible-lg visible-md">
         	<div class="logoQuatroRodas pull-left">
             <img class="img-responsive" src="<?php bloginfo('template_directory');?>/imagens/logo-quatro-rodas.png" />
             </div>

@@ -20,9 +20,9 @@
 <body>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="<?php bloginfo('template_directory');?>/scripts/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="<?php bloginfo('template_directory');?>/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory');?>/scripts/scripts.js"></script>
 
    <script type="text/javascript" src="<?php bloginfo('template_directory');?>/scripts/jquery.sticky.js"></script>
@@ -30,6 +30,7 @@
   <script>
     $(window).load(function(){
       $("#menuSt").sticky({ topSpacing: 0 });
+	  $("#menuPrincipalSt").sticky({ topSpacing: 0 });
     });
   </script>   
 
