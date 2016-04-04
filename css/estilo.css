@@ -28,20 +28,35 @@ margin:12px 0;
 	text-transform:uppercase;
 	color:#fff;
 	max-width:1320px;
-	height:80px;
+	max-height:80px;
 	background-color:#ed1c24;
 	z-index:1;
+	transition: all .5s;
+}
+
+#menuPrincipalSt-sticky-wrapper.is-sticky .cabecalho{
+max-height:60px;
 }
 
 .logoQuatroRodas{
 padding:20px;
 max-width:200px;
+transition: all .5s;
+}
+
+#menuPrincipalSt-sticky-wrapper.is-sticky .logoQuatroRodas{
+padding:10px 20px;;
 }
 
 .areaMenuPrincipal{
 max-width:800px;
 height:30px;
 padding:10px 0;
+transition: all .5s;
+}
+
+#menuPrincipalSt-sticky-wrapper.is-sticky  .areaMenuPrincipal{
+padding:0;
 }
 
 .menuPrincipal
@@ -91,14 +106,35 @@ color:#a3a3a3;
 margin:17px 20px;
 border:none;
 background:#fff url('../imagens/lupinha-busca.png') no-repeat 170px 14px;
+transition: all .5s;
 }
+
+#menuPrincipalSt-sticky-wrapper.is-sticky .busca{
+	margin:12px 20px;
+	padding:6px;
+	}
 
 .menuAcessados
 {
+transition: all .5s;
 background-color: #242424;
 width:100%;
-height:28px;
+max-height:28px;
 margin:0 0 0 0 !important;
+}
+
+.menuAcessados ul{
+display:block;
+}
+
+/* Quando a tela rola, o menu acessados some */
+#menuPrincipalSt-sticky-wrapper.is-sticky .menuAcessados{
+max-height:0;
+}
+
+/* e o conteúdo do menu desaparece também */
+#menuPrincipalSt-sticky-wrapper.is-sticky .menuAcessados ul{
+display:none;
 }
 
 .leadPrincipal{
@@ -213,6 +249,12 @@ margin:10px 0 0 0;
 	width:100%;
 	background-color:#242424;
 	border-bottom:solid 1px #ed1c24;
+	transition:0;
+}
+
+/* caso a tela role, menu deve ser ajustado */
+#menuPrincipalSt-sticky-wrapper.is-sticky #Carros{
+top:0;
 }
 
 #Carros{
@@ -382,9 +424,17 @@ padding-left:10px;
 
 .btFecharMenuMobile{
 display:block;
-background:url('../imagens/x.png') no-repeat center;
 width:20px;
 height:20px;
+transition: all .2s;
+}
+
+.btNavMobile.btDir.navbar-toggle.collapsed .btFecharMenuMobile{
+background:url('../imagens/hamburger.png') no-repeat center;
+}
+
+.btNavMobile.btDir.navbar-toggle .btFecharMenuMobile {
+background:url('../imagens/x.png') no-repeat center;	
 }
 
 /* Sobrescrever */
@@ -413,11 +463,19 @@ padding-right:10px !important;
 
 #Fundo{
 display:none;
-background-color:rgba(100,100,100,.5);
+background-color:rgba(30,30,30,.5);
 height:100%;
 width:100%;
 position:fixed;
 top:0px;
 left:0;
 z-index:0;
+}
+
+/* conserta a aparição do wrapper no menu principal em telas menores */
+@media screen and (max-width: 991px) {
+#menuPrincipalSt-sticky-wrapper.sticky-wrapper{
+display:none;
+}
+
 }
