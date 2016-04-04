@@ -21,6 +21,8 @@ if (menuMobileExpandiu.length > 0) {
 	document.getElementById(id).style.display = "none";
 	} else {
 		document.getElementById(id).style.display = "block";
+		document.querySelector('.navbar').style.zIndex = "10";
+		document.querySelector('#Fundo').style.zIndex = "3";
 	}	
 
 }
