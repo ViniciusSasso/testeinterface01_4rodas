@@ -5,6 +5,8 @@
         	<div class="logoQuatroRodas pull-left">
             <img class="img-responsive" src="<?php bloginfo('template_directory');?>/imagens/logo-quatro-rodas.png" />
             </div>
+            
+            <div class="social"></div>
 
 		<div class="areaMenuPrincipal pull-left">
 				<div class="menuPrincipal center-block">

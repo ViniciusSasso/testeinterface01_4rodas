@@ -23,7 +23,7 @@ if ( $query->have_posts() ) {
 		 
 		 if ($contagem == 1) {  // Post principal
 			 ?>
-         <div class="col-lg-6 leadPrincipal">
+         <div class="col-lg-6 col-md-6 col-sm-12 leadPrincipal">
   	    	<div class="deslocaTitulo">
 		    	<span class="secao"><?php the_category(); ?></span>
 	    		<h1><?php the_title(); ?></h1>
@@ -31,7 +31,7 @@ if ( $query->have_posts() ) {
         
         <div class="miniaturaDePost">
 		<?php if ( has_post_thumbnail() ) {
-			the_post_thumbnail(array(600,600));
+			the_post_thumbnail(array(750,750));
 				}
 		?>
         	</div>
@@ -42,11 +42,11 @@ if ( $query->have_posts() ) {
 		 // bloco de publicidade
 		  } elseif ($contagem ==3){
 			?>
-			<div class="col-lg-3 destaqueMenor publi">
+			<div class="col-lg-3 col-md-3 col-sm-6 destaqueMenor publi">
     			<p><img class="img-responsive" alt="Volkswagen Fusca - O Carro Voltou - publicidade" src="<?php bloginfo('template_directory');?>/imagens/publi.png" /></p>
     		</div>
           
-            <div class="col-lg-3 destaqueMenor">
+            <div class="col-lg-3 col-md-3 col-sm-6 destaqueMenor">
     		<div class="deslocaMenor">
 		    	<span class="secao"><?php the_category(); ?></span>
 		    	<h1><?php the_title(); ?></h1>
@@ -65,7 +65,7 @@ if ( $query->have_posts() ) {
 		<?php
 		// posts menores		 
 		 } else { ?>
-        <div class="col-lg-3 destaqueMenor">
+        <div class="col-lg-3 col-md-3 col-sm-6 destaqueMenor">
     		<div class="deslocaMenor">
 		    	<span class="secao"><?php the_category(); ?></span>
 		    	<h1><?php the_title(); ?></h1>
