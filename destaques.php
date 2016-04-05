@@ -31,7 +31,7 @@ if ( $query->have_posts() ) {
         
         <div class="miniaturaDePost">
 		<?php if ( has_post_thumbnail() ) {
-			the_post_thumbnail(array(750,750));
+			the_post_thumbnail(array(650,650));
 				}
 		?>
         	</div>
