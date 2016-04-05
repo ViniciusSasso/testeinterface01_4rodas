@@ -69,8 +69,14 @@ padding:0;
 {
 display:block;
 float:left;
-padding:6px;
-margin:6px;
+padding:6px 6px 0 0;
+margin:6px 8px 0 0;
+transition:all .5s;
+}
+
+#menuPrincipalSt-sticky-wrapper.is-sticky .itensMenuPrinc li
+{
+padding:0;
 }
 
 .itensMenuAcessados li
@@ -103,20 +109,22 @@ text-transform:uppercase;
 width:190px;
 padding:12px;
 color:#a3a3a3;
-margin:17px 20px;
+margin:17px 10px;
 border:none;
-background:#fff url('../imagens/lupinha-busca.png') no-repeat 170px 14px;
+background:#fff url('../imagens/lupinha-busca.png') no-repeat 160px 14px;
 transition: all .5s;
 }
 
+
 #menuPrincipalSt-sticky-wrapper.is-sticky .busca{
+	width:150px;
 	margin:12px 20px;
 	padding:6px;
+	background:#fff url('../imagens/lupinha-busca.png') no-repeat 120px 8px;
 	}
 
 .menuAcessados
 {
-transition: all .5s;
 background-color: #242424;
 width:100%;
 max-height:28px;
@@ -173,13 +181,29 @@ font-family:'Dosis Medium',arial, sans-serif;
 font-size:16px;
 background:url('../imagens/bolete.png') no-repeat 0 4px;
 float:right;
-line-height:30px;
+}
+
+.social{
+overflow:hidden;
+background:url('../imagens/social.png') no-repeat;
+width:0;
+float:left;
+height:30px;
+margin:16px 0 0 6px;
+transition:all .5s;
+}
+
+#menuPrincipalSt-sticky-wrapper.is-sticky .social{
+width:130px;
+}
+
+.secao ul{
+margin-bottom:0;
 }
 
 .destaqueMenor{
 height:250px;
 overflow:hidden;
-/*background-color:#FC9;*/
 }
 
 #Destaques{
@@ -327,6 +351,7 @@ margin:5px 0 20px 0;
 
 .miniaturaDePost{
 height:100%;
+width:100%;
 overflow:hidden;
 padding:0;
 margin:0;
@@ -336,6 +361,7 @@ top:0;
 left:0;
 z-index:-1;
 text-align:center;
+background-color:#444;
 }
 
 .miniaturaDePost img{
